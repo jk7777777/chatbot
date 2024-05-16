@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>What jobs can I get with a computer science degree </pattern>
+    <template>With a computer science degree, many different career paths are available. These include: <set>jobs</set> </template>
+  </category>
+
+<category><pattern>what careers can i get with a cs degree </pattern><template><srai>WHAT JOBS CAN I GET WITH A COMPUTER SCIENCE DEGREE </srai></template></category>
+
+
+</aiml>
