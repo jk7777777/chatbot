@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern> MY NAME IS *</pattern>
+    <template> Nice to meet you <think><set name="name"><star/></set></think>
+    <get name="name"></get>
+    . I'm going to help you find a suitable computer science career. 
+    Shall we get started?
+        <button>
+            <text>yes</text>
+            <postback>YES</postback>
+        </button>
+        
+        <button>
+            <text>no</text>
+            <postback>That's fine. Let me know when we can start.</postback>
+        </button>
+
+    </template>   
+</category>
+
+
+<category>
+    <pattern>YES</pattern>
+        <template>
+            Perfect. I'll start by asking a few questions. Within computer science,
+            do you prefer coding, or analysis of software and information?
+            <button>
+                <text>I like to code!</text>
+                <postback>option1</postback>
+            </button>
+            
+            <button>
+                <text>I prefer analyzing software and information.</text>
+                <postback>option2</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>option1</pattern>
+        <template>
+            I see. Do you have a preference on which type of platform you'd like
+            to code for?
+            <button>
+                <text>I like to code webpages</text>
+                <postback>option5</postback>
+            </button>
+            
+            <button>
+                <text>I prefer to code for mobile platforms.</text>
+                <postback>option6</postback>
+            </button>
+            
+            <button>
+                <text>No preference. I simply like building software.</text>
+                <postback>option7</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>option5</pattern>
+        <template>
+            Nice choice. There are many benefits to being a web developer.
+            Click this link to learn more about being a web developer.
+        </template>
+</category>
+
+
+<!--<category>-->
+<!--    <pattern>MY NAME IS *</pattern>-->
+<!--    <template>Nice to meet you  <think><set name="name"><star/></set></think> -->
+<!--    <get name="name"/>-->
+<!--      . I'm going to help you find a suitable career with your new computer science degree. Shall we get started?-->
+<!--    </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>YES</pattern>-->
+<!--    <that>MY NAME IS</that>-->
+<!--    <think><set name="bool">no</set></think>-->
+<!--    <condition name="bool" value="yes">yes</condition>-->
+<!--        lets get it-->
+<!--    <condition name="bool" value="no"></condition>-->
+<!--        <template>aw</template>-->
+<!--</category>-->
+
+
+<!--<category>-->
+<!--    <pattern> YES </pattern>-->
+<!--    <That>. I'm going to help you find a suitable career with your new computer science degree. Shall we get started?</That>-->
+<!--    <Template>Noted. Do you prefer A or B?</Template>-->
+<!--</category>-->
+
+
+<!--<category>-->
+<!--	<pattern>B</pattern>-->
+<!--	<think><set name="preference">other</set></think>-->
+<!--	<template>Noted. You prefer an analyst position. Do you have more of an interest in securing company and user data? Or-->
+<!--	testing new software?</template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--	<pattern>A</pattern>-->
+<!--    	<think><set name="preference">coding</set></think>-->
+<!--    	<template>Noted. You prefer Coding. Do you prefer C, D, or E?</template>-->
+	
+<!--	<that>Noted. You prefer Coding. Do you see yourself coding mobile applications, or webpages specifically?</that>-->
+<!--        <condition>-->
+<!--        <pattern> C </pattern>-->
+<!--        <think><set name="option1" value="software engineering"></set></think>-->
+<!--        <template>Noted. you prefer C. </template>-->
+<!--	</condition>-->
+	
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern> YES </pattern>-->
+<!--    <That>. Noted. You prefer Coding. Do you see yourself coding mobile applications, or webpages specifically?</That>-->
+<!--    <Template>Which do you see yourself enjoying more? Coding mobile apps, or web pages? (type: 'mobile apps' or 'web pages')</Template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>D</pattern>-->
+    <!--<that>Noted. You prefer A. Do you prefer C or D?</that>-->
+<!--    <template>Noted. you prefer Dz. </template>-->
+<!--</category>-->
+
+<!--<category><pattern>MY name</pattern>-->
+<!--<template><get name="name"/></template>-->
+<!--</category>-->
+
+
+<!--<category>-->
+<!--	<pattern>YES</pattern>-->
+<!--	<template>perfect. Do you prefer A or B?</template>-->
+<!--</category>-->
+
+<!--5 job types: 2 analyst: Software Quality Assurance, Information Technology analyst, 3 SWE: mobile, webdev, SWE-->
+
+</aiml>

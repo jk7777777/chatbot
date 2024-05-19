@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   
-
 <category>
-<pattern>DO YOU KNOW WHO * IS</pattern>
-<template><srai>WHO IS <star/></srai></template>
+<pattern>*</pattern>
+<template>WTF IS <star/> </template>
 </category>
+
 
 </aiml>
