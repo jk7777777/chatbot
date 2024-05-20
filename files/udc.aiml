@@ -3,7 +3,7 @@
   
 <category>
 <pattern>*</pattern>
-<template>WTF IS <star/> </template>
+<template>I'm not sure how to answer that. Type 'hello' to restart from the beginning.</template>
 </category>
 
 
