@@ -2,14 +2,14 @@
 <aiml version="2.0">
 
 <category>
-    <pattern>HELLO *</pattern>
+    <pattern>HELLO</pattern>
     <template>
         Hello there! Introduce yourself by typing 'My name is' followed by your name.
     </template>
 </category>
 
 <category>
-    <pattern>HI *</pattern>
+    <pattern>HI</pattern>
     <template>
         Hello there! I am a chatbot designed to help Computer Science majors
         choose a career.
